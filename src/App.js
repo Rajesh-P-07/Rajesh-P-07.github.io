@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import lately from "./lately.png";
 import {
   Box,
   Button,
@@ -19,6 +18,8 @@ import { Icon } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
+import { SiNetlify } from "react-icons/si";
+import GitHubCalendar from "react-github-calendar";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
 
       <Box
         backgroundColor="#00203FFF"
-        h="2000px"
+        h="4000px"
         width="100%"
         fontFamily="cursive"
       >
@@ -194,15 +195,152 @@ function App() {
           </Box>
         </Flex>
         <Divider borderBottom="1px solid grey" width="98%" pt="100px"></Divider>
-      </Box>
-      <Flex>
-        <Box>
-          <Image
-            src=""
-            boxSize="400px"
-          />
+        <Heading color="rgb(219, 210, 210)" as="h1">
+          Projects
+        </Heading>
+        <Center>
+          <Flex flexWrap="wrap">
+            <Box backgroundColor="white" maxWidth="600px" p="20px">
+              <Image
+                src="https://i.postimg.cc/4NSk1QGM/lately.png"
+                boxSize="600px"
+                h="350px"
+              />
+            </Box>
+            <Box backgroundColor="white" maxWidth="500px" p="20px">
+              <Heading>lately.ai</Heading>
+              <Text>
+                Lately.ai generates social content for specific audience. This
+                is a collaboration project done by 5 people
+              </Text>
+              <Text fontSize="20px" fontWeight="500">
+                Contributions
+              </Text>
+              <Center>
+                <HStack>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    Navbar
+                  </Text>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    Landing page
+                  </Text>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    product page
+                  </Text>
+                </HStack>
+              </Center>
+              <Text fontSize="20px" fontWeight="500">
+                Tech-stack
+              </Text>
+              <Center>
+                <HStack>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    HTML
+                  </Text>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    CSS
+                  </Text>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    JavaScript
+                  </Text>
+                </HStack>
+              </Center>
+              <Button mr="10px">
+                <Link
+                  href="https://scintillating-blini-c82eca.netlify.app/"
+                  textDecor="none"
+                >
+                  Live <SiNetlify />{" "}
+                </Link>
+              </Button>
+              <Button>
+                <Link
+                  href="https://github.com/capitalN/lately.ai"
+                  textDecor="none"
+                >
+                  GITHUB <AiFillGithub />{" "}
+                </Link>
+              </Button>
+            </Box>
+          </Flex>
+        </Center>
+        <Center pt="20px">
+          <Flex flexWrap="wrap">
+            <Box backgroundColor="white" maxWidth="510px" p="20px">
+              <Heading>lately.ai</Heading>
+              <Text>
+                Lately.ai generates social content for specific audience. This
+                is a collaboration project done by 5 people
+              </Text>
+              <Text fontSize="20px" fontWeight="500">
+                Contributions
+              </Text>
+              <Center>
+                <HStack>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    Navbar
+                  </Text>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    Landing page
+                  </Text>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    product page
+                  </Text>
+                </HStack>
+              </Center>
+              <Text fontSize="20px" fontWeight="500">
+                Tech-stack
+              </Text>
+              <Center>
+                <HStack>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    HTML
+                  </Text>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    CSS
+                  </Text>
+                  <Text bgColor="lightblue" p="2px 6px" borderRadius="4px">
+                    JavaScript
+                  </Text>
+                </HStack>
+              </Center>
+              <Button mr="10px">
+                <Link
+                  href="https://fastidious-axolotl-57b216.netlify.app/"
+                  textDecor="none"
+                >
+                  Live <SiNetlify />{" "}
+                </Link>
+              </Button>
+              <Button>
+                <Link
+                  href="https://github.com/Sunilkumar93/fluffy-shelf-1478"
+                  textDecor="none"
+                >
+                  GITHUB <AiFillGithub />{" "}
+                </Link>
+              </Button>
+            </Box>
+            <Box backgroundColor="white" maxWidth="600px" p="20px">
+              <Image
+                src="https://i.postimg.cc/X7JWCcXZ/chargebee.png"
+                boxSize="550px"
+                h="350px"
+              />
+            </Box>
+          </Flex>
+        </Center>
+        <Divider borderBottom="1px solid grey" width="98%" pt="100px"></Divider>
+        <Box bgColor="white" p="10" width="1000px" margin="auto" mt="30px">
+          <Center>
+            <GitHubCalendar username="Rajesh-P-07" maxWidth="900px"/>
+          </Center>
+          <Box>
+            <Heading>Git Stats</Heading>
+          </Box>
         </Box>
-      </Flex>
+        <Divider borderBottom="1px solid grey" width="98%" pt="100px"></Divider>
+      </Box>
     </div>
   );
 }
